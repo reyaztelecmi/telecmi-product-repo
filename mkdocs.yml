@@ -1,0 +1,59 @@
+site_name: TeleCMI Product Repo
+site_description: Every Admin Console and Connle screen, explained.
+# Set these two after creating the GitHub repository:
+repo_url: https://github.com/reyaztelecmi/telecmi-product-repo
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.tabs.link
+  icon:
+    edit: material/pencil
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle: { icon: material/weather-night, name: Dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle: { icon: material/weather-sunny, name: Light mode }
+
+extra_css:
+  - assets/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc: { permalink: true }
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist: { custom_checkbox: true }
+
+nav:
+  - Home: index.md
+  - Connle:
+      - connle/index.md
+      - Home:
+          - Apps (home): connle/home/apps-home.md
+  - Admin Console:
+      - admin-console/index.md
+  - How to contribute:
+      - contributing.md
+      - Screen template: authoring/screen-template.md
