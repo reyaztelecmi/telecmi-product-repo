@@ -1,0 +1,3 @@
+.crumb { font-family: var(--md-code-font-family); font-size: .75rem; color: var(--md-default-fg-color--light); }
+.md-typeset img { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; }
+.md-typeset table:not([class]) td:first-child { white-space: nowrap; }
