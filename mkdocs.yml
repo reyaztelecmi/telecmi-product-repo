@@ -52,6 +52,8 @@ nav:
       - connle/index.md
       - Home:
           - Apps (home): connle/home/apps-home.md
+      - Users:
+          - Users: connle/users/users.md
   - Admin Console:
       - admin-console/index.md
   - How to contribute:
